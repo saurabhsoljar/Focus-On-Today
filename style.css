@@ -1,0 +1,69 @@
+body{
+  margin: 0;
+  background-color:  rgba(72, 163, 0, 0.07);
+  font-family: "Poppins", serif;
+}
+
+main{
+  padding: 0 16px;
+}
+.title{
+  font-size: 64px;
+  color: #48A300;
+  text-align: center;
+}
+.title span{
+  color: #61481c;
+}
+
+.app-container{
+  background-color: #fbfbfb;
+  max-width: 660px;
+  margin-inline: auto;
+  border-radius: 15px;
+  padding: 32px 42px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.11);
+}
+.sun-icon{
+  vertical-align: middle;
+  margin-left: 16px;
+}
+
+.progras-labal{
+  font-size: 14px;
+  color: #858585;
+  margin-bottom: 18px;
+}
+
+.progress-bar{
+  height: 30px;
+  background-color: rgba(72, 163, 0, 0.1);
+  border-radius: 15px; 
+}
+
+.progress-value{
+  height: 100%;
+  width: 66%;
+  background-color: #48A300;
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: 10px;
+  color: #eeffe0;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.error-level{
+  font-size: 14px;
+  color: #ff5151;
+}
+
+@media(max-width: 768px){
+  .title{
+    font-size: 32px;
+  }
+  .app-container{
+    padding: 16px 32px;
+  }
+}
