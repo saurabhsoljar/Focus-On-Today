@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 body{
   margin: 0;
   background-color:  rgba(72, 163, 0, 0.07);
@@ -5,7 +9,7 @@ body{
 }
 
 main{
-  padding: 0 16px;
+  padding: 0 16px 32px;
 }
 .title{
   font-size: 64px;
@@ -29,16 +33,17 @@ main{
   margin-left: 16px;
 }
 
-.progras-labal{
+.progress-labal{
   font-size: 14px;
   color: #858585;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .progress-bar{
   height: 30px;
   background-color: rgba(72, 163, 0, 0.1);
   border-radius: 15px; 
+  margin-bottom: 40px;
 }
 
 .progress-value{
@@ -55,9 +60,94 @@ main{
 }
 
 .error-level{
-  font-size: 14px;
+  font-size: 12px;
   color: #ff5151;
+  margin-top: 4px;
+  /* margin-bottom: 8px; */
+  display: none;
 }
+
+.goal-container{
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 17px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  padding: 0 22px;
+  background-color: #ffff;
+  margin-bottom: 42px;
+}
+
+.custom-checkbox{
+  height: 24px;
+  width: 24px;
+  border: 2px solid rgba(97, 72, 28, 0.3);
+  border-radius: 50%;
+  flex-shrink: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.check-icon{
+  display: none;
+}
+
+.goal-input{
+  border: none;
+  outline: none;
+  padding-left: 22px;
+  font-family: inherit;
+  font-size: 16px;
+  width: 100%;
+  align-self: stretch;
+}
+
+.goal-input::placeholder{
+  color: #d9d9d9;
+}
+
+.quote{
+  font-weight: 500;
+  text-align: center;
+}
+
+.made{
+  font-weight: 500;
+  font-size: 10px;
+  text-align: center;
+  color: #858585;
+  margin-top: 32px;
+}
+
+.completed .custom-checkbox{
+  background-color: #48A300;
+  border-color: #48A300;
+}
+
+.completed .check-icon{
+  display: block;
+}
+
+.completed .goal-input{
+  color: #48A300;
+  text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(max-width: 768px){
   .title{
@@ -66,4 +156,20 @@ main{
   .app-container{
     padding: 16px 32px;
   }
+  .goal-container{
+    height: 64px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+  }
+  .custom-checkbox{
+    width: 20px;
+    height: 20px;
+  }
+  .made{
+    margin-top: 32px;
+  }
+  .progress-bar{
+    height: 24px;
+  }
+  
 }
