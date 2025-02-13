@@ -38,6 +38,9 @@ main{
   color: #858585;
   margin-bottom: 20px;
 }
+.show-error .progress-labal{
+  display: block;
+}
 
 .progress-bar{
   height: 30px;
@@ -46,9 +49,10 @@ main{
   margin-bottom: 40px;
 }
 
+
 .progress-value{
   height: 100%;
-  width: 66%;
+  width: 0;
   background-color: #48A300;
   border-radius: 15px;
   font-weight: 500;
@@ -56,6 +60,10 @@ main{
   color: #eeffe0;
   display: flex;
   align-items: center;
+  overflow: hidden;
+}
+
+.progress-value span{
   padding-left: 20px;
 }
 
